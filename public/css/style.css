@@ -1,4 +1,7 @@
 .body {
-  background-image: url(/assec/background/background.jpg);
+  height: 100vh;
+  background-image: url(/assets/background/background_2560x1440.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

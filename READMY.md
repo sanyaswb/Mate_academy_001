@@ -7,7 +7,9 @@
 
 7. Створити базову розмітку HTML
 8. Додати файл стилів та нормалайз
-9. Додати background
-10. Створити header
-11. Створити навігацію nav
-12. Стилізувати header
+9. Додати background для body
+10. Додати background для header
+11. Додати background для footer
+12. Створити header
+13. Створити навігацію nav
+14. Стилізувати header
