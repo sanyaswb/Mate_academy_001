@@ -216,6 +216,11 @@ html {
 }
 
 @media (min-width: 720px) {
+  .intro__title {
+    margin-bottom: 26px;
+    font-size: 26px;
+  }
+
   .intro__text {
     overflow: visible;
     height: 100%;
@@ -230,6 +235,11 @@ html {
 }
 
 @media (min-width: 1280px) {
+  .intro__title {
+    margin-bottom: 32px;
+    font-size: 36px;
+  }
+
   .intro__text {
     font-size: 22px;
     line-height: 30px;
