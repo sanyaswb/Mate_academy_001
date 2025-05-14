@@ -1,10 +1,12 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+  --h2-title: 14px;
   scroll-behavior: smooth;
 }
 
 .body {
+  /* position: relative; */
   --nav-link-size: 1;
   box-sizing: border-box;
   height: 100vh;
@@ -63,9 +65,6 @@ html {
   border-radius: 4px;
   text-align: center;
 }
-
-
-
 
 @media (max-width: 450px) {
   .nav {
@@ -145,36 +144,113 @@ html {
   background-color: rgb(100, 99, 101);
 }
 
-.section__introduction {
+.text {
+  color: rgb(81, 39, 39);
+}
+
+.section {
   display: flex;
-  width: 100%;
-  height: 100vh;
   flex-direction: column;
-  justify-content: center;
+  height: 100vh;
 }
 
-.title {
-  text-align: center;
-  margin: 0 auto;
-  color: rgb(0, 0, 0);
-  font-size: 52px;
-  font-weight: bold;
-  margin-bottom: 50px;
+.section__intro {
+  width: 100%;
+  height: 100%;
 }
 
-.introduction-title {
+.section__title {
   background-image: url(/assets/title_sections_back.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  padding: 85px 0 40px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+  font-weight: bold;
+  padding: 65px 0 20px;
 }
 
-
-.introduction-back {
-  height: calc(100vh + 100%);
-  background-position: center;
-  background-image: url(/assets/section1_center_2560x1440.webp);
+.intro {
+  display: flex;
+  align-items: center;
+  min-height: 800px;
+  justify-content: center;
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(/assets/intro.webp);
+}
+
+.intro__container {
+  display: block;
+  /* max-width: 1200px; */
+  padding: 125px calc(20%);
+}
+
+.intro__title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.intro__text {
+  line-height: 18px;
+  overflow: auto;
+  display: block;
+  font-weight: bold;
+  max-width: 800px;
+}
+
+@media (max-width: 520px) {
+    .intro__text {
+  height: 8rem;
+  }
+}
+
+@media (min-width: 520px) {
+    .intro__text {
+    height: 13rem;
+  }
+}
+
+@media (min-width: 720px) {
+  .intro__text {
+    overflow: visible;
+    height: 100%;
+  }
+}
+
+@media (min-width: 960px) {
+  .intro__text {
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .intro__text {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .intro {
+    max-height: 1200px;
+  }
+
+  .intro__text {
+    font-size: 33px;
+    line-height: 40px;
+  }
+}
+
+.img__introduction-back {
+  height: 100%;
+  background-image: url('/assets/section1_center_2560x1440.webp');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
