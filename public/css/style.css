@@ -164,9 +164,9 @@ html {
   background-position: center;
   text-align: center;
   color: rgb(0, 0, 0);
-  font-size: 48px;
   font-weight: bold;
-  padding: 65px 0 20px;
+  font-size: 24px;
+  padding: 30px 0 10px;
 }
 
 .intro {
@@ -181,8 +181,10 @@ html {
 }
 
 .intro__container {
-  display: block;
-  padding: 125px calc(20%);
+  display: flex;
+  flex-direction: column;
+  padding: 0 calc(20%);
+
 }
 
 .intro__title {
@@ -201,11 +203,6 @@ html {
 }
 
 @media (max-width: 520px) {
-  .section__title {
-    font-size: 30px;
-    padding: 50px 0 20px;
-  }
-
   .intro__text {
     font-size: 18px;
     height: 8rem;
@@ -220,64 +217,66 @@ html {
 }
 
 @media (min-width: 720px) {
+  .section__title {
+    font-size: 30px;
+    padding: 50px 0 20px;
+  }
+  
   .intro__title {
     margin-bottom: 26px;
     font-size: 26px;
   }
 
   .intro__text {
+    width: 460px;
     overflow: visible;
     height: 100%;
-    font-size: 17px;
   }
 }
 
 @media (min-width: 960px) {
-  .intro__container {
-    padding: 115px calc(27%);
-}
-
-  .intro__text {
-    font-size: 20px;
-    line-height: 21px;
-  }
-}
-
-@media (min-width: 1280px) {
   .intro__title {
     margin-bottom: 32px;
     font-size: 36px;
   }
 
+  .intro__container {
+    padding: 90px 0px;
+  }
+
   .intro__text {
-    font-size: 22px;
-    line-height: 30px;
-    max-width: 640px;
+    width: 660px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section__title {
+    font-size: 40px;
+    padding: 70px 0 30px;
+  }
+
+  .intro__title {
+    margin-bottom: 32px;
+    font-size: 36px;
   }
 }
 
 @media (min-width: 1920px) {
   .intro__container {
-    padding: 245px calc(27%);
+    padding: 150px 0;
 }
 
-  .intro {
-    max-height: 1200px;
-  }
-
   .intro__text {
-    font-size: 44px;
-    line-height: 44px;
-    max-width: 1000px;
+    width: 800px;
+    font-size: 30px;
+    line-height: 35px;
   }
 }
 
 .title-goal {
-  margin-bottom: 150px;
-}
-
-.goal__container {
-
+  margin-bottom: 60px;
 }
 
 .goal__background {
