@@ -176,6 +176,7 @@ html {
   background-size: contain;
   background-position: center;
   background-image: url(/assets/intro.webp);
+  /* scale: 1.4; */
 }
 
 .intro__container {
@@ -192,7 +193,7 @@ html {
   margin-bottom: 5px;
 }
 
-.intro__text {
+.intro__content {
   line-height: 18px;
   overflow: auto;
   display: block;
@@ -201,14 +202,18 @@ html {
 }
 
 @media (max-width: 520px) {
-  .intro__text {
+  /* .intro {
+    scale: 1;
+  } */
+
+  .intro__content {
     font-size: 18px;
     height: 8rem;
   }
 }
 
 @media (min-width: 520px) {
-  .intro__text {
+  .intro__content {
     font-size: 20px;
     height: 14rem;
   }
@@ -225,7 +230,7 @@ html {
     font-size: 26px;
   }
 
-  .intro__text {
+  .intro__content {
     width: 460px;
     overflow: visible;
     height: 100%;
@@ -242,7 +247,7 @@ html {
     padding: 90px 0px;
   }
 
-  .intro__text {
+  .intro__content {
     width: 660px;
     font-size: 24px;
     line-height: 26px;
@@ -266,7 +271,7 @@ html {
     padding: 150px 0;
 }
 
-  .intro__text {
+  .intro__content {
     width: 800px;
     font-size: 30px;
     line-height: 35px;
@@ -282,4 +287,78 @@ html {
   background-size: cover;
   background-position: top;
   background-image: url('/assets/section1_center_2560x1440.webp');
+}
+
+.goal__container {
+  display: flex;
+  justify-content: center;
+  height: 750px;
+  overflow: auto;
+  padding: 0 20px;
+  gap: 10px;
+}
+
+.goal__content {
+  height: 50%;
+}
+
+.goal-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.goal-text {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+@media screen and (orientation: portrait) {
+  .goal__container {
+    display: flex;
+    flex-direction: column;
+    border-left: 8px solid #454545;
+    border-right: 8px solid #454545;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .goal__container {
+    height: 400px;
+    padding: 0 5%;
+    gap: 30px;
+  }
+
+  .goal-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .goal__content {
+    width: 100%;
+  }
+
+  .goal-certificate {
+    min-height: 100%;
+  }
+}
+
+.goal-certificate {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  max-height: 50%;
+  height: 100%;
+  background-color: #202227;
+  border: 10px solid #353840;
+  border-radius: 30px;
+}
+
+.certificate-img {
+  display: block;
+  margin: 0 auto;
+  height: 70px;
 }
