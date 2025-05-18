@@ -152,7 +152,7 @@ html {
 .section {
   margin-bottom: 280px;
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 .section__title {
@@ -410,4 +410,12 @@ html {
 
 .button:hover {
   background-color: #b1b1b2;
+}
+
+.moduls {
+  text-align: center;
+}
+
+.modul > h2:first-of-type {
+  color: wheat;
 }
